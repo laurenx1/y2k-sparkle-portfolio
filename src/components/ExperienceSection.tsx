@@ -62,20 +62,20 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-muted/30">
+    <section id="experience" className="py-20 dark-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Experience
           </h2>
-          <p className="font-heading text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-heading text-lg text-white/80 max-w-2xl mx-auto">
             My journey in tech, from research labs to startup environments
           </p>
         </div>
 
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/20"></div>
+          <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-0.5 bg-primary/40"></div>
 
           <div className="space-y-12">
             {experiences.map((exp, index) => (
@@ -86,7 +86,7 @@ const ExperienceSection = () => {
                 }`}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background z-10">
+                <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white z-10">
                   {exp.current && (
                     <div className="w-full h-full bg-primary rounded-full animate-pulse-glow"></div>
                   )}
@@ -94,17 +94,17 @@ const ExperienceSection = () => {
 
                 {/* Content card */}
                 <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-8 ml-12 md:ml-0' : 'md:pl-8 ml-12 md:ml-0'}`}>
-                  <Card className="glass-morphism border-white/20 hover:border-white/40 cosmic-transition hover:scale-105">
+                  <Card className="glass-dark border-white/10 hover:border-white/20 smooth-transition hover:scale-105">
                     <CardContent className="p-6">
                       {/* Header */}
                       <div className="flex items-start justify-between mb-4">
                         <div className="flex items-center space-x-3">
                           <span className="text-2xl">{exp.logo}</span>
                           <div>
-                            <h3 className="font-heading font-semibold text-foreground">
+                            <h3 className="font-heading font-semibold text-white">
                               {exp.position}
                             </h3>
-                            <div className="flex items-center space-x-2 text-muted-foreground text-sm">
+                            <div className="flex items-center space-x-2 text-white/70 text-sm">
                               <Building className="h-4 w-4" />
                               <span>{exp.company}</span>
                             </div>
@@ -118,7 +118,7 @@ const ExperienceSection = () => {
                       </div>
 
                       {/* Meta info */}
-                      <div className="flex flex-wrap gap-4 mb-4 text-sm text-muted-foreground">
+                      <div className="flex flex-wrap gap-4 mb-4 text-sm text-white/70">
                         <div className="flex items-center space-x-1">
                           <Calendar className="h-4 w-4" />
                           <span>{exp.duration}</span>
@@ -132,7 +132,7 @@ const ExperienceSection = () => {
                       {/* Description */}
                       <ul className="space-y-2">
                         {exp.description.map((item, i) => (
-                          <li key={i} className="text-foreground/80 text-sm flex items-start">
+                          <li key={i} className="text-white/90 text-sm flex items-start">
                             <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                             {item}
                           </li>

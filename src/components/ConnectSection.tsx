@@ -63,28 +63,28 @@ const ConnectSection = () => {
   ];
 
   return (
-    <section id="connect" className="py-20 bg-muted/30">
+    <section id="connect" className="py-20 dark-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
             Let's Connect
           </h2>
-          <p className="font-heading text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-heading text-lg text-white/80 max-w-2xl mx-auto">
             Have a project in mind or just want to chat about tech? I'd love to hear from you!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Contact Form */}
-          <Card className="glass-morphism border-white/20">
+          <Card className="glass-dark border-white/10">
             <CardContent className="p-8">
-              <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
+              <h3 className="font-heading text-2xl font-semibold text-white mb-6">
                 Send me a message
               </h3>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="text-foreground font-medium">
+                  <Label htmlFor="name" className="text-white font-medium">
                     Your Name
                   </Label>
                   <Input
@@ -95,12 +95,12 @@ const ConnectSection = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="bg-background/50 border-white/20 focus:border-primary cosmic-transition"
+                    className="bg-background/10 border-white/20 focus:border-primary smooth-transition text-white placeholder:text-white/50"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-foreground font-medium">
+                  <Label htmlFor="email" className="text-white font-medium">
                     Email Address
                   </Label>
                   <Input
@@ -111,12 +111,12 @@ const ConnectSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="bg-background/50 border-white/20 focus:border-primary cosmic-transition"
+                    className="bg-background/10 border-white/20 focus:border-primary smooth-transition text-white placeholder:text-white/50"
                   />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground font-medium">
+                  <Label htmlFor="message" className="text-white font-medium">
                     Message
                   </Label>
                   <Textarea
@@ -127,13 +127,13 @@ const ConnectSection = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    className="bg-background/50 border-white/20 focus:border-primary cosmic-transition resize-none"
+                    className="bg-background/10 border-white/20 focus:border-primary smooth-transition resize-none text-white placeholder:text-white/50"
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  variant="cosmic"
+                  variant="gradient"
                   size="lg"
                   className="w-full font-heading"
                 >
@@ -147,23 +147,23 @@ const ConnectSection = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             {/* Quick Info */}
-            <Card className="glass-morphism border-white/20">
+            <Card className="glass-dark border-white/10">
               <CardContent className="p-8">
-                <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
+                <h3 className="font-heading text-2xl font-semibold text-white mb-6">
                   Get in touch
                 </h3>
                 
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3 text-foreground/80">
+                  <div className="flex items-center space-x-3 text-white/80">
                     <MapPin className="h-5 w-5 text-primary" />
                     <span>San Francisco Bay Area, CA</span>
                   </div>
                   
-                  <div className="flex items-center space-x-3 text-foreground/80">
+                  <div className="flex items-center space-x-3 text-white/80">
                     <Mail className="h-5 w-5 text-primary" />
                     <a 
                       href="mailto:alex@example.com"
-                      className="hover:text-primary cosmic-transition"
+                      className="hover:text-primary smooth-transition"
                     >
                       alex@example.com
                     </a>
@@ -171,7 +171,7 @@ const ConnectSection = () => {
                 </div>
 
                 <div className="mt-8">
-                  <p className="text-foreground/70 text-sm leading-relaxed">
+                  <p className="text-white/70 text-sm leading-relaxed">
                     I'm always open to discussing new opportunities, collaborating on interesting projects, 
                     or just chatting about technology and innovation. Don't hesitate to reach out!
                   </p>
@@ -180,9 +180,9 @@ const ConnectSection = () => {
             </Card>
 
             {/* Social Links */}
-            <Card className="glass-morphism border-white/20">
+            <Card className="glass-dark border-white/10">
               <CardContent className="p-8">
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-6">
+                <h3 className="font-heading text-xl font-semibold text-white mb-6">
                   Find me online
                 </h3>
                 
@@ -193,10 +193,10 @@ const ConnectSection = () => {
                       href={social.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`flex items-center space-x-3 p-4 bg-background/30 rounded-lg cosmic-transition hover:scale-105 ${social.color}`}
+                      className={`flex items-center space-x-3 p-4 bg-background/10 rounded-lg smooth-transition hover:scale-105 ${social.color}`}
                     >
                       <social.icon className="h-5 w-5" />
-                      <span className="font-medium">{social.name}</span>
+                      <span className="font-medium text-white">{social.name}</span>
                     </a>
                   ))}
                 </div>

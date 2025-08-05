@@ -31,8 +31,8 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 cosmic-transition ${
-        isScrolled ? 'glass-morphism backdrop-blur-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 smooth-transition ${
+        isScrolled ? 'glass-clean backdrop-blur-lg' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,14 +54,14 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary cosmic-transition font-medium relative group"
+                className="text-foreground hover:text-primary smooth-transition font-medium relative group"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary cosmic-transition group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary smooth-transition group-hover:w-full"></span>
               </button>
             ))}
             <Button 
-              variant="cosmic" 
+              variant="gradient"
               size="sm"
               onClick={() => scrollToSection('connect')}
             >
@@ -85,20 +85,19 @@ const Navigation = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden glass-morphism backdrop-blur-lg rounded-lg mt-2 p-4 space-y-4">
+          <div className="md:hidden glass-clean backdrop-blur-lg rounded-lg mt-2 p-4 space-y-4">
             {navItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left text-foreground hover:text-primary cosmic-transition font-medium py-2"
+                className="block w-full text-left text-foreground hover:text-primary smooth-transition font-medium py-2"
               >
                 {item.label}
               </button>
             ))}
             <Button 
-              variant="cosmic" 
+              variant="gradient" 
               size="sm" 
               className="w-full font-heading"
               onClick={() => scrollToSection('connect')}

@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div>
             <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4">
               Hey, I'm{' '}
-              <span className="stars-gradient bg-clip-text text-transparent">
+              <span className="hero-gradient bg-clip-text text-transparent">
                 Alex Chen
               </span>
             </h1>
@@ -49,7 +49,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
-              variant="cosmic" 
+              variant="gradient" 
               size="xl"
               onClick={() => scrollToSection('projects')}
               className="font-heading"
@@ -57,7 +57,7 @@ const HeroSection = () => {
               View My Work
             </Button>
             <Button 
-              variant="glass" 
+              variant="clean" 
               size="xl"
               onClick={() => scrollToSection('about')}
               className="font-heading"
@@ -72,7 +72,7 @@ const HeroSection = () => {
               href="https://github.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary cosmic-transition hover:scale-110"
+              className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Github className="h-6 w-6" />
             </a>
@@ -80,13 +80,13 @@ const HeroSection = () => {
               href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary cosmic-transition hover:scale-110"
+              className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
               href="mailto:alex@example.com"
-              className="text-foreground/60 hover:text-primary cosmic-transition hover:scale-110"
+              className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Mail className="h-6 w-6" />
             </a>
@@ -97,7 +97,7 @@ const HeroSection = () => {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
           <button
             onClick={() => scrollToSection('about')}
-            className="text-foreground/60 hover:text-primary cosmic-transition"
+            className="text-foreground/60 hover:text-primary smooth-transition"
           >
             <ChevronDown className="h-8 w-8" />
           </button>

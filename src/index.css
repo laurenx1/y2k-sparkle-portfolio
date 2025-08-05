@@ -2,106 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Y2K-meets-modern design system with star/astrological theming
+/* High-contrast Y2K design system - Pink & Turquoise focused
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Base Y2K color palette */
-    --background: 315 25% 97%;
-    --foreground: 258 25% 15%;
+    /* High-contrast Y2K color palette - Pink & Turquoise focused */
+    --background: 320 20% 98%;
+    --foreground: 200 15% 15%;
 
-    --card: 315 20% 95%;
-    --card-foreground: 258 25% 15%;
+    --card: 320 15% 96%;
+    --card-foreground: 200 15% 15%;
 
-    --popover: 315 20% 95%;
-    --popover-foreground: 258 25% 15%;
+    --popover: 320 15% 96%;
+    --popover-foreground: 200 15% 15%;
 
-    /* Y2K Primary - Deep cosmic purple */
-    --primary: 258 85% 65%;
-    --primary-foreground: 315 25% 97%;
+    /* Y2K Primary - Bright turquoise */
+    --primary: 180 100% 50%;
+    --primary-foreground: 200 15% 15%;
 
-    /* Y2K Secondary - Bright turquoise */
-    --secondary: 180 85% 75%;
-    --secondary-foreground: 258 25% 15%;
+    /* Y2K Secondary - Hot pink */
+    --secondary: 330 100% 70%;
+    --secondary-foreground: 320 20% 98%;
 
-    /* Y2K Accent - Hot pink */
-    --accent: 330 85% 70%;
-    --accent-foreground: 315 25% 97%;
+    /* Y2K Accent - Electric pink */
+    --accent: 320 100% 65%;
+    --accent-foreground: 320 20% 98%;
 
-    /* Y2K Muted - Soft lavender */
-    --muted: 280 35% 90%;
-    --muted-foreground: 258 25% 45%;
+    /* Y2K Muted - Soft pink */
+    --muted: 320 25% 92%;
+    --muted-foreground: 200 15% 40%;
+
+    /* Dark sections for contrast */
+    --dark-bg: 200 25% 8%;
+    --dark-foreground: 320 20% 95%;
+    --dark-card: 200 20% 12%;
+    --dark-accent: 180 100% 60%;
 
     /* Y2K Success - Neon green */
-    --success: 120 85% 65%;
-    --success-foreground: 258 25% 15%;
+    --success: 150 100% 50%;
+    --success-foreground: 200 15% 15%;
 
     /* Y2K Warning - Electric orange */
-    --warning: 25 85% 65%;
-    --warning-foreground: 258 25% 15%;
+    --warning: 25 100% 60%;
+    --warning-foreground: 200 15% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 315 25% 97%;
+    --destructive-foreground: 320 20% 98%;
 
-    --border: 280 35% 85%;
-    --input: 280 35% 90%;
-    --ring: 258 85% 65%;
+    --border: 320 25% 85%;
+    --input: 320 25% 90%;
+    --ring: 180 100% 50%;
 
     --radius: 1rem;
 
-    /* Y2K Gradients and Effects */
-    --gradient-cosmic: linear-gradient(135deg, hsl(258 85% 65%), hsl(330 85% 70%), hsl(180 85% 75%));
-    --gradient-stars: linear-gradient(135deg, hsl(258 85% 65%) 0%, hsl(280 85% 75%) 50%, hsl(330 85% 70%) 100%);
-    --gradient-aurora: linear-gradient(45deg, hsl(180 85% 75%), hsl(120 85% 65%), hsl(258 85% 65%));
+    /* Y2K Gradients and Effects - Pink & Turquoise focused */
+    --gradient-primary: linear-gradient(135deg, hsl(180 100% 50%), hsl(330 100% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(320 100% 65%), hsl(180 80% 60%));
+    --gradient-dark: linear-gradient(135deg, hsl(200 25% 8%), hsl(200 20% 12%));
+    --gradient-hero: linear-gradient(135deg, hsl(180 100% 50%) 0%, hsl(320 100% 65%) 50%, hsl(330 100% 70%) 100%);
     
-    /* Y2K Shadows */
-    --shadow-cosmic: 0 10px 30px -5px hsl(258 85% 65% / 0.3);
-    --shadow-neon: 0 0 20px hsl(330 85% 70% / 0.5);
-    --shadow-glow: 0 0 40px hsl(180 85% 75% / 0.4);
+    /* High-contrast shadows */
+    --shadow-primary: 0 10px 30px -5px hsl(180 100% 50% / 0.3);
+    --shadow-accent: 0 0 20px hsl(330 100% 70% / 0.5);
+    --shadow-dark: 0 10px 40px -10px hsl(200 25% 8% / 0.5);
     
     /* Animation transitions */
-    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 200 25% 8%;
+    --foreground: 320 20% 95%;
+    --card: 200 20% 12%;
+    --card-foreground: 320 20% 95%;
+    --popover: 200 20% 12%;
+    --popover-foreground: 320 20% 95%;
+    --primary: 180 100% 60%;
+    --primary-foreground: 200 25% 8%;
+    --secondary: 330 100% 70%;
+    --secondary-foreground: 200 25% 8%;
+    --muted: 200 20% 15%;
+    --muted-foreground: 320 15% 70%;
+    --accent: 320 100% 65%;
+    --accent-foreground: 200 25% 8%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 320 20% 95%;
+    --border: 200 20% 20%;
+    --input: 200 20% 15%;
+    --ring: 180 100% 60%;
   }
 }
 
@@ -117,48 +108,69 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Y2K Component Classes */
-  .cosmic-gradient {
-    background: var(--gradient-cosmic);
+  /* Y2K Component Classes - High Contrast Pink & Turquoise */
+  .primary-gradient {
+    background: var(--gradient-primary);
   }
   
-  .stars-gradient {
-    background: var(--gradient-stars);
+  .accent-gradient {
+    background: var(--gradient-accent);
   }
   
-  .aurora-gradient {
-    background: var(--gradient-aurora);
+  .hero-gradient {
+    background: var(--gradient-hero);
   }
   
-  .cosmic-shadow {
-    box-shadow: var(--shadow-cosmic);
+  .dark-gradient {
+    background: var(--gradient-dark);
   }
   
-  .neon-glow {
-    box-shadow: var(--shadow-neon);
+  .primary-shadow {
+    box-shadow: var(--shadow-primary);
   }
   
-  .star-glow {
-    box-shadow: var(--shadow-glow);
+  .accent-shadow {
+    box-shadow: var(--shadow-accent);
   }
   
-  .cosmic-transition {
-    transition: var(--transition-cosmic);
+  .dark-shadow {
+    box-shadow: var(--shadow-dark);
+  }
+  
+  .smooth-transition {
+    transition: var(--transition-smooth);
   }
   
   .bounce-transition {
     transition: var(--transition-bounce);
   }
   
+  /* Dark theme sections */
+  .dark-section {
+    background: hsl(var(--dark-bg));
+    color: hsl(var(--dark-foreground));
+  }
+  
+  .dark-card {
+    background: hsl(var(--dark-card));
+    color: hsl(var(--dark-foreground));
+  }
+  
+  /* Clean glass morphism */
+  .glass-clean {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
   /* Scroll behavior */
   .smooth-scroll {
     scroll-behavior: smooth;
-  }
-  
-  /* Glass morphism effect for Y2K cards */
-  .glass-morphism {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }

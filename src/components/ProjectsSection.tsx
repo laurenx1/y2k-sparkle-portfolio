@@ -55,7 +55,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className={`group glass-morphism border-white/20 hover:border-white/40 cosmic-transition hover:scale-105 overflow-hidden ${
+              className={`group glass-clean border-white/20 hover:border-white/40 smooth-transition hover:scale-105 overflow-hidden ${
                 project.featured ? 'lg:col-span-2 xl:col-span-1' : ''
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -64,9 +64,9 @@ const ProjectsSection = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover cosmic-transition group-hover:scale-110"
+                  className="w-full h-48 object-cover smooth-transition group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 cosmic-transition"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 smooth-transition"></div>
                 
                 {/* Project status badge */}
                 <div className="absolute top-4 right-4">
@@ -120,7 +120,7 @@ const ProjectsSection = () => {
                   {/* Action buttons */}
                   <div className="flex space-x-3 pt-2">
                     <Button
-                      variant="neon"
+                      variant="accent"
                       size="sm"
                       className="flex-1"
                       asChild
@@ -159,7 +159,7 @@ const ProjectsSection = () => {
 
         {/* View all projects CTA */}
         <div className="text-center mt-12">
-          <Button variant="aurora" size="lg" className="font-heading">
+          <Button variant="gradient" size="lg" className="font-heading">
             View All Projects on GitHub
           </Button>
         </div>

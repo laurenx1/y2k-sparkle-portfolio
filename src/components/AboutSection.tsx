@@ -42,7 +42,7 @@ const AboutSection = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden cosmic-shadow animate-float">
+              <div className="w-80 h-80 rounded-full overflow-hidden primary-shadow animate-float">
                 <img
                   src={avatar}
                   alt="Alex Chen"
@@ -89,7 +89,7 @@ const AboutSection = () => {
                 {['React', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'Docker', 'Figma'].map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground cosmic-transition"
+                    className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground smooth-transition"
                   >
                     {tech}
                   </span>
@@ -108,7 +108,7 @@ const AboutSection = () => {
             {values.map((value, index) => (
               <Card 
                 key={value.title} 
-                className="glass-morphism border-white/20 hover:border-white/40 cosmic-transition hover:scale-105"
+                className="glass-clean border-white/20 hover:border-white/40 smooth-transition hover:scale-105"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-6 text-center">
