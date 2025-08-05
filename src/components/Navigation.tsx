@@ -44,7 +44,7 @@ const Navigation = () => {
           >
             <Star className="h-6 w-6 text-primary" />
             <span className="font-display font-bold text-xl text-foreground">
-              Alex Chen
+              Lauren Pryor
             </span>
           </div>
 

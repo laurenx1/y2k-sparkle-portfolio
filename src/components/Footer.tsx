@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex items-center justify-center space-x-2">
             <Star className="h-6 w-6 text-primary" />
             <span className="font-display font-bold text-xl text-foreground">
-              Alex Chen
+              Lauren Pryor
             </span>
             <Star className="h-6 w-6 text-primary" />
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
-            <span>© {currentYear} Alex Chen</span>
+            <span>© {currentYear} Lauren Pryor</span>
             <span>•</span>
             <span className="flex items-center space-x-1">
               <span>Made with</span>

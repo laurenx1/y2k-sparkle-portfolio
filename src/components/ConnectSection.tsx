@@ -39,25 +39,25 @@ const ConnectSection = () => {
     {
       name: 'GitHub',
       icon: Github,
-      url: 'https://github.com',
+      url: 'https://github.com/laurenx1',
       color: 'hover:text-primary'
     },
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com',
+      url: 'https://linkedin.com/laurenpryor1',
       color: 'hover:text-secondary'
     },
     {
       name: 'Twitter',
       icon: Twitter,
-      url: 'https://twitter.com',
+      url: 'https://youtu.be/eRVs728Dj4c?si=1oTLVpLkcY6AmyLT',
       color: 'hover:text-accent'
     },
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:alex@example.com',
+      url: 'mailto:lpryor@caltech.edu.com',
       color: 'hover:text-success'
     }
   ];
@@ -162,10 +162,10 @@ const ConnectSection = () => {
                   <div className="flex items-center space-x-3 text-white/80">
                     <Mail className="h-5 w-5 text-primary" />
                     <a 
-                      href="mailto:alex@example.com"
+                      href="mailto:lpryor@caltech.edu"
                       className="hover:text-primary smooth-transition"
                     >
-                      alex@example.com
+                      lpryor@caltech.edu
                     </a>
                   </div>
                 </div>

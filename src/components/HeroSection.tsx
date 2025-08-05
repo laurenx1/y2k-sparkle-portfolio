@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
-import cosmicHero from '@/assets/cosmic-hero.jpg';
+import cosmicHero from '@/assets/ab_3.png';
 
 const HeroSection = () => {
   const scrollToSection = (sectionId: string) => {
@@ -22,7 +22,7 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-background/30 backdrop-blur-sm"></div>
+      <div className="absolute inset-0"></div>
       
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,11 +30,11 @@ const HeroSection = () => {
           {/* Main heading */}
           <div>
             <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4">
-              Hey, I'm{' '}
-              <span className="hero-gradient bg-clip-text text-transparent">
-                Alex Chen
-              </span>
-            </h1>
+  Hey, I'm{' '}
+  <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+    Lauren Pryor
+  </span>
+</h1>
             <p className="font-heading text-lg sm:text-xl lg:text-2xl text-muted-foreground">
               Computer Science Student • Software Engineer • Entrepreneur
             </p>
@@ -69,7 +69,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/laurenx1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
@@ -77,7 +77,7 @@ const HeroSection = () => {
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://linkedin.com/laurenpryor1" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
@@ -85,7 +85,7 @@ const HeroSection = () => {
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
-              href="mailto:alex@example.com"
+              href="mailto:lpryor@caltech.edu"
               className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Mail className="h-6 w-6" />

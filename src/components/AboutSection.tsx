@@ -45,7 +45,7 @@ const AboutSection = () => {
               <div className="w-80 h-80 rounded-full overflow-hidden primary-shadow animate-float">
                 <img
                   src={avatar}
-                  alt="Alex Chen"
+                  alt="Lauren Pryor"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -59,7 +59,7 @@ const AboutSection = () => {
           <div className="space-y-6">
             <div className="space-y-4">
               <h3 className="font-heading text-2xl font-semibold text-foreground">
-                Hi! I'm Alex, a Computer Science student with big dreams.
+                Hi! I'm Lauren, a Computer Science student with big dreams.
               </h3>
               <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
