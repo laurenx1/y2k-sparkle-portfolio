@@ -2,57 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Y2K-meets-modern design system with star/astrological theming
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base Y2K color palette */
+    --background: 315 25% 97%;
+    --foreground: 258 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 315 20% 95%;
+    --card-foreground: 258 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 315 20% 95%;
+    --popover-foreground: 258 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Y2K Primary - Deep cosmic purple */
+    --primary: 258 85% 65%;
+    --primary-foreground: 315 25% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Y2K Secondary - Bright turquoise */
+    --secondary: 180 85% 75%;
+    --secondary-foreground: 258 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Y2K Accent - Hot pink */
+    --accent: 330 85% 70%;
+    --accent-foreground: 315 25% 97%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Y2K Muted - Soft lavender */
+    --muted: 280 35% 90%;
+    --muted-foreground: 258 25% 45%;
+
+    /* Y2K Success - Neon green */
+    --success: 120 85% 65%;
+    --success-foreground: 258 25% 15%;
+
+    /* Y2K Warning - Electric orange */
+    --warning: 25 85% 65%;
+    --warning-foreground: 258 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 315 25% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 280 35% 85%;
+    --input: 280 35% 90%;
+    --ring: 258 85% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Y2K Gradients and Effects */
+    --gradient-cosmic: linear-gradient(135deg, hsl(258 85% 65%), hsl(330 85% 70%), hsl(180 85% 75%));
+    --gradient-stars: linear-gradient(135deg, hsl(258 85% 65%) 0%, hsl(280 85% 75%) 50%, hsl(330 85% 70%) 100%);
+    --gradient-aurora: linear-gradient(45deg, hsl(180 85% 75%), hsl(120 85% 65%), hsl(258 85% 65%));
+    
+    /* Y2K Shadows */
+    --shadow-cosmic: 0 10px 30px -5px hsl(258 85% 65% / 0.3);
+    --shadow-neon: 0 0 20px hsl(330 85% 70% / 0.5);
+    --shadow-glow: 0 0 40px hsl(180 85% 75% / 0.4);
+    
+    /* Animation transitions */
+    --transition-cosmic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -101,5 +112,53 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* Y2K Component Classes */
+  .cosmic-gradient {
+    background: var(--gradient-cosmic);
+  }
+  
+  .stars-gradient {
+    background: var(--gradient-stars);
+  }
+  
+  .aurora-gradient {
+    background: var(--gradient-aurora);
+  }
+  
+  .cosmic-shadow {
+    box-shadow: var(--shadow-cosmic);
+  }
+  
+  .neon-glow {
+    box-shadow: var(--shadow-neon);
+  }
+  
+  .star-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .cosmic-transition {
+    transition: var(--transition-cosmic);
+  }
+  
+  .bounce-transition {
+    transition: var(--transition-bounce);
+  }
+  
+  /* Scroll behavior */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+  
+  /* Glass morphism effect for Y2K cards */
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
