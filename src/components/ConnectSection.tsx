@@ -45,7 +45,7 @@ const ConnectSection = () => {
     {
       name: 'LinkedIn',
       icon: Linkedin,
-      url: 'https://linkedin.com/laurenpryor1',
+      url: 'https://linkedin.com/in/laurenpryor1',
       color: 'hover:text-secondary'
     },
     {
@@ -156,7 +156,7 @@ const ConnectSection = () => {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3 text-white/80">
                     <MapPin className="h-5 w-5 text-primary" />
-                    <span>San Francisco Bay Area, CA</span>
+                    <span>Pasadena, CA // NYC </span>
                   </div>
                   
                   <div className="flex items-center space-x-3 text-white/80">

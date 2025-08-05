@@ -43,8 +43,8 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
           >
             <Star className="h-6 w-6 text-primary" />
-            <span className="font-display font-bold text-xl text-foreground">
-              Lauren Pryor
+            <span className="font-display font-bold text-xl text-white">
+              @laurstardev
             </span>
           </div>
 
@@ -54,7 +54,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary smooth-transition font-medium relative group"
+                className="text-pink-300 hover:text-primary smooth-transition font-medium relative group"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary smooth-transition group-hover:w-full"></span>
@@ -91,7 +91,7 @@ const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left text-foreground hover:text-primary smooth-transition font-medium py-2"
+                className="block w-full text-left text-white hover:text-primary smooth-transition font-medium py-2"
               >
                 {item.label}
               </button>

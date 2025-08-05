@@ -29,19 +29,19 @@ const HeroSection = () => {
         <div className="space-y-8 animate-fade-in-up">
           {/* Main heading */}
           <div>
-            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4">
+            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-4">
   Hey, I'm{' '}
   <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
-    Lauren Pryor
+    Lauren
   </span>
 </h1>
-            <p className="font-heading text-lg sm:text-xl lg:text-2xl text-muted-foreground">
+            <p className="font-heading text-lg sm:text-xl lg:text-2xl text-primary">
               Computer Science Student • Software Engineer • Entrepreneur
             </p>
           </div>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-foreground/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
             Passionate about building innovative tech solutions that create positive impact. 
             Currently exploring the intersection of sustainability, design, and cutting-edge technology.
           </p>
@@ -72,21 +72,21 @@ const HeroSection = () => {
               href="https://github.com/laurenx1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
+              className="text-white/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Github className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com/laurenpryor1" 
+              href="https://linkedin.com/in/laurenpryor1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
+              className="text-white/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Linkedin className="h-6 w-6" />
             </a>
             <a 
               href="mailto:lpryor@caltech.edu"
-              className="text-foreground/60 hover:text-primary smooth-transition hover:scale-110"
+              className="text-white/60 hover:text-primary smooth-transition hover:scale-110"
             >
               <Mail className="h-6 w-6" />
             </a>
