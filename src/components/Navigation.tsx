@@ -42,8 +42,8 @@ const Navigation = () => {
             className="flex items-center space-x-2 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <Star className="h-6 w-6 text-primary animate-cosmic-spin" />
-            <span className="font-cosmic font-bold text-xl text-foreground">
+            <Star className="h-6 w-6 text-primary" />
+            <span className="font-display font-bold text-xl text-foreground">
               Alex Chen
             </span>
           </div>
@@ -100,7 +100,7 @@ const Navigation = () => {
             <Button 
               variant="cosmic" 
               size="sm" 
-              className="w-full"
+              className="w-full font-heading"
               onClick={() => scrollToSection('connect')}
             >
               Let's Connect

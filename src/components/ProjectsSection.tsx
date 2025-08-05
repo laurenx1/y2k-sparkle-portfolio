@@ -43,10 +43,10 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Projects
           </h2>
-          <p className="font-aurora text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-heading text-lg text-muted-foreground max-w-2xl mx-auto">
             A showcase of my work building innovative solutions for real-world problems
           </p>
         </div>
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
                 <div className="space-y-4">
                   {/* Title and description */}
                   <div>
-                    <h3 className="font-cosmic text-xl font-semibold text-foreground mb-2">
+                    <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
                       {project.title}
                     </h3>
                     <p className="text-foreground/80 text-sm leading-relaxed">
@@ -159,7 +159,7 @@ const ProjectsSection = () => {
 
         {/* View all projects CTA */}
         <div className="text-center mt-12">
-          <Button variant="aurora" size="lg" className="font-cosmic">
+          <Button variant="aurora" size="lg" className="font-heading">
             View All Projects on GitHub
           </Button>
         </div>

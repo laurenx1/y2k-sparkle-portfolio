@@ -65,10 +65,10 @@ const ExperienceSection = () => {
     <section id="experience" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Experience
           </h2>
-          <p className="font-aurora text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-heading text-lg text-muted-foreground max-w-2xl mx-auto">
             My journey in tech, from research labs to startup environments
           </p>
         </div>
@@ -101,7 +101,7 @@ const ExperienceSection = () => {
                         <div className="flex items-center space-x-3">
                           <span className="text-2xl">{exp.logo}</span>
                           <div>
-                            <h3 className="font-cosmic font-semibold text-foreground">
+                            <h3 className="font-heading font-semibold text-foreground">
                               {exp.position}
                             </h3>
                             <div className="flex items-center space-x-2 text-muted-foreground text-sm">

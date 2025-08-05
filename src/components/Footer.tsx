@@ -9,15 +9,15 @@ const Footer = () => {
         <div className="text-center space-y-6">
           {/* Logo/Name */}
           <div className="flex items-center justify-center space-x-2">
-            <Star className="h-6 w-6 text-primary animate-cosmic-spin" />
-            <span className="font-cosmic font-bold text-xl text-foreground">
+            <Star className="h-6 w-6 text-primary" />
+            <span className="font-display font-bold text-xl text-foreground">
               Alex Chen
             </span>
-            <Star className="h-6 w-6 text-primary animate-cosmic-spin" />
+            <Star className="h-6 w-6 text-primary" />
           </div>
 
           {/* Tagline */}
-          <p className="font-aurora text-muted-foreground max-w-md mx-auto">
+          <p className="font-heading text-muted-foreground max-w-md mx-auto">
             Building the future, one line of code at a time ✨
           </p>
 

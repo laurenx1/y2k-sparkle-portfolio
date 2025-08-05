@@ -29,13 +29,13 @@ const HeroSection = () => {
         <div className="space-y-8 animate-fade-in-up">
           {/* Main heading */}
           <div>
-            <h1 className="font-cosmic text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4">
+            <h1 className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4">
               Hey, I'm{' '}
               <span className="stars-gradient bg-clip-text text-transparent">
                 Alex Chen
               </span>
             </h1>
-            <p className="font-aurora text-lg sm:text-xl lg:text-2xl text-muted-foreground">
+            <p className="font-heading text-lg sm:text-xl lg:text-2xl text-muted-foreground">
               Computer Science Student • Software Engineer • Entrepreneur
             </p>
           </div>
@@ -52,7 +52,7 @@ const HeroSection = () => {
               variant="cosmic" 
               size="xl"
               onClick={() => scrollToSection('projects')}
-              className="font-cosmic"
+              className="font-heading"
             >
               View My Work
             </Button>
@@ -60,7 +60,7 @@ const HeroSection = () => {
               variant="glass" 
               size="xl"
               onClick={() => scrollToSection('about')}
-              className="font-cosmic"
+              className="font-heading"
             >
               Learn About Me
             </Button>

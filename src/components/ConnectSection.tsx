@@ -66,10 +66,10 @@ const ConnectSection = () => {
     <section id="connect" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Let's Connect
           </h2>
-          <p className="font-aurora text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-heading text-lg text-muted-foreground max-w-2xl mx-auto">
             Have a project in mind or just want to chat about tech? I'd love to hear from you!
           </p>
         </div>
@@ -78,7 +78,7 @@ const ConnectSection = () => {
           {/* Contact Form */}
           <Card className="glass-morphism border-white/20">
             <CardContent className="p-8">
-              <h3 className="font-cosmic text-2xl font-semibold text-foreground mb-6">
+              <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
                 Send me a message
               </h3>
               
@@ -135,7 +135,7 @@ const ConnectSection = () => {
                   type="submit"
                   variant="cosmic"
                   size="lg"
-                  className="w-full font-cosmic"
+                  className="w-full font-heading"
                 >
                   <Send className="h-5 w-5 mr-2" />
                   Send Message
@@ -149,7 +149,7 @@ const ConnectSection = () => {
             {/* Quick Info */}
             <Card className="glass-morphism border-white/20">
               <CardContent className="p-8">
-                <h3 className="font-cosmic text-2xl font-semibold text-foreground mb-6">
+                <h3 className="font-heading text-2xl font-semibold text-foreground mb-6">
                   Get in touch
                 </h3>
                 
@@ -182,7 +182,7 @@ const ConnectSection = () => {
             {/* Social Links */}
             <Card className="glass-morphism border-white/20">
               <CardContent className="p-8">
-                <h3 className="font-cosmic text-xl font-semibold text-foreground mb-6">
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-6">
                   Find me online
                 </h3>
                 

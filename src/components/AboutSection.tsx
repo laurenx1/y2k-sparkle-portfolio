@@ -30,10 +30,10 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-cosmic text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             About Me
           </h2>
-          <p className="font-aurora text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-heading text-lg text-muted-foreground max-w-2xl mx-auto">
             Bridging the gap between innovative technology and sustainable impact
           </p>
         </div>
@@ -58,7 +58,7 @@ const AboutSection = () => {
           {/* About Content */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <h3 className="font-cosmic text-2xl font-semibold text-foreground">
+              <h3 className="font-heading text-2xl font-semibold text-foreground">
                 Hi! I'm Alex, a Computer Science student with big dreams.
               </h3>
               <div className="space-y-4 text-foreground/80 leading-relaxed">
@@ -82,7 +82,7 @@ const AboutSection = () => {
 
             {/* Skills/Technologies */}
             <div>
-              <h4 className="font-cosmic text-lg font-semibold text-foreground mb-3">
+              <h4 className="font-heading text-lg font-semibold text-foreground mb-3">
                 Technologies I love working with:
               </h4>
               <div className="flex flex-wrap gap-2">
@@ -101,7 +101,7 @@ const AboutSection = () => {
 
         {/* Values Grid */}
         <div className="mt-20">
-          <h3 className="font-cosmic text-2xl font-semibold text-center text-foreground mb-12">
+          <h3 className="font-heading text-2xl font-semibold text-center text-foreground mb-12">
             What drives me
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -113,7 +113,7 @@ const AboutSection = () => {
               >
                 <CardContent className="p-6 text-center">
                   <value.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h4 className="font-cosmic font-semibold text-foreground mb-2">
+                  <h4 className="font-heading font-semibold text-foreground mb-2">
                     {value.title}
                   </h4>
                   <p className="text-sm text-foreground/70">

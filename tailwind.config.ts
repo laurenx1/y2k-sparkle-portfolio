@@ -62,8 +62,9 @@ export default {
 				}
 			},
 			fontFamily: {
-				'cosmic': ['Space Grotesk', 'system-ui', 'sans-serif'],
-				'aurora': ['Orbitron', 'monospace']
+				'display': ['Poppins', 'system-ui', 'sans-serif'],
+				'heading': ['Nunito', 'system-ui', 'sans-serif'],
+				'body': ['Inter', 'system-ui', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
