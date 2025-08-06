@@ -35,7 +35,7 @@ const Footer = () => {
             <span className="flex items-center space-x-1">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-accent animate-pulse" />
-              <span>and lots of caffeine</span>
+              <span>and lots of matcha</span>
             </span>
           </div>
 

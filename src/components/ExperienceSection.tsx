@@ -4,61 +4,61 @@ import { Calendar, MapPin, Building } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: 'TechStart Inc.',
-      position: 'Software Engineering Intern',
-      location: 'San Francisco, CA',
-      duration: 'June 2024 - Present',
+      company: 'Meta',
+      position: 'Software Engineering / GenAI Intern',
+      location: 'NYC',
+      duration: 'May 2025 - Present',
       description: [
-        'Developed responsive web applications using React and TypeScript',
+        'Developed agentic internal tooling for oncall ENGs',
         'Collaborated with cross-functional teams to deliver user-centered features',
-        'Optimized application performance, reducing load times by 40%',
-        'Implemented automated testing suites with Jest and React Testing Library'
+        'Created the first AI agent for on-call ads experience teams using SEV guidebooks',
+        'Worked primarily in Hack and React'
       ],
       logo: '🚀',
       current: true
     },
     {
-      company: 'University Research Lab',
-      position: 'Research Assistant',
-      location: 'Berkeley, CA',
-      duration: 'Jan 2024 - May 2024',
+      company: 'California Institute of Technology (Caltech)',
+      position: 'Researcher',
+      location: 'Pasadena, CA',
+      duration: 'Jan 2025 - Present',
       description: [
-        'Conducted research on sustainable computing and green software practices',
+        'Engineered robust backend and data pipelines for LLM',
         'Developed data analysis tools using Python and machine learning libraries',
-        'Co-authored research paper on energy-efficient algorithms',
-        'Presented findings at the ACM Student Research Competition'
+        'enabling real-time bias, misinformation, and polarization analysis across 15 digital news sources',
+        'Supplements the research Professor R. Michael Alvarez for the Caltech/MIT Voting Technology Project'
       ],
       logo: '🔬',
-      current: false
+      current: true
     },
     {
-      company: 'Code for Good',
-      position: 'Volunteer Developer',
-      location: 'Remote',
-      duration: 'Sep 2023 - Dec 2023',
+      company: 'Meta',
+      position: 'Meta University SWE Intern',
+      location: 'Menlo Park, CA',
+      duration: 'Jun 2024 - Aug 2024',
       description: [
-        'Built web platform for local nonprofit organization',
-        'Managed project timeline and coordinated with 5-person development team',
-        'Implemented accessibility features following WCAG 2.1 guidelines',
-        'Delivered project 2 weeks ahead of schedule'
-      ],
-      logo: '💚',
-      current: false
-    },
-    {
-      company: 'Campus Innovation Challenge',
-      position: 'Team Lead & Full-Stack Developer',
-      location: 'Berkeley, CA',
-      duration: 'Mar 2023',
-      description: [
-        'Led team of 4 to develop sustainability tracking mobile app',
-        'Built REST API with Node.js and MongoDB',
+        '•Completed intensive Web and Full Stack Development training through CodePath x Meta, mastering React, Node.js, and RESTful API design through hands-on projects',
+        '•Developed PULSE, a news web app featuring PULSECHECK for personalized searches using LLaMA3',
         'Designed and implemented React Native frontend',
-        'Won "Best Sustainability Impact" award'
+        ' AI-generated content detection with RoBERTa (OpenAI), and custom-tuned Google BERT for political bias analysis'
       ],
       logo: '🏆',
       current: false
-    }
+    },
+    {
+      company: 'Music and Auditory Research Lab (MARL) @ NYU',
+      position: 'Research Intern',
+      location: 'NYC',
+      duration: 'Jun 2023 - Aug 2023',
+      description: [
+        '•Developed PyTorch models to correlate audio-visual data from 100+ hours of EPIC KITCHENS first-person recordings, leveraging XMem, CLIP, and GPT-4, to enhance spatial audio understanding for AR/VR applications',
+        'Developed Epic Kitchens United python package, streamlining data input for audio-visual correlation models and improving processing efficiency by 99.4%.',
+        '•Engineered code and Python package that enables training of computational models for spatial sound scene description, advancing AR/VR technology, spatial audio, and music information retrieval (NSF award #1955357)',
+        'Delivered project 3 weeks ahead of schedule'
+      ],
+      logo: '🎸',
+      current: false
+    },
   ];
 
   return (
