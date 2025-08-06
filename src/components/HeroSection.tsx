@@ -94,7 +94,7 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
+        <div className="pt-6 left-1/2 transform -translate-x-1/2 animate-float justify-center">
           <button
             onClick={() => scrollToSection('about')}
             className="text-foreground/60 hover:text-primary smooth-transition"

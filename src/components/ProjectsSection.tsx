@@ -8,7 +8,7 @@ import project3 from '@/assets/project3.jpg';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'EcoTracker',
+      title: 'Ignitra',
       description: 'A comprehensive sustainability tracking platform that helps users monitor their carbon footprint and environmental impact. Features real-time data visualization and personalized recommendations.',
       image: project1,
       technologies: ['React', 'Node.js', 'PostgreSQL', 'Chart.js', 'AWS'],
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       status: 'Completed'
     },
     {
-      title: 'StarGaze',
+      title: 'PULSE',
       description: 'Mobile app that uses AR technology to help users identify constellations and celestial objects. Includes educational content and astronomy community features.',
       image: project2,
       technologies: ['React Native', 'ARKit', 'Firebase', 'Python', 'TensorFlow'],
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       status: 'In Development'
     },
     {
-      title: 'DevCollab',
+      title: 'BiasLens',
       description: 'Collaborative coding platform designed for remote teams. Features real-time code sharing, integrated video calls, and project management tools.',
       image: project3,
       technologies: ['Vue.js', 'Socket.io', 'MongoDB', 'Docker', 'WebRTC'],
@@ -159,9 +159,15 @@ const ProjectsSection = () => {
 
         {/* View all projects CTA */}
         <div className="text-center mt-12">
+          <a
+  href="https://github.com/laurenx1"
+  target="_blank"
+  rel="noopener noreferrer"
+>
           <Button variant="gradient" size="lg" className="font-heading">
             View All Projects on GitHub
           </Button>
+          </a>
         </div>
       </div>
     </section>
