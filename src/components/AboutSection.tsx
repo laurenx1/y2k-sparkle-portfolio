@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Code, Lightbulb, Target, Zap } from 'lucide-react';
-import avatar from '@/assets/avatar_2.jpg';
+import avatar from '@/assets/avatar_2.png';
 
 const AboutSection = () => {
   const values = [
